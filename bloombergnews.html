@@ -1,48 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" style="width:100%; height:100%;">
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>YouTube Fullscreen Embed</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Fullscreen Embed</title>
 
-<style>
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: black;
+    }
 
-html,
-body {
-width: 100%;
-height: 100%;
-overflow: hidden;
-background: #000;
-}
-
-.video-container {
-width: 100vw;
-height: 100vh;
-}
-
-iframe {
-width: 100%;
-height: 100%;
-border: none;
-}
-</style>
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+  </style>
 </head>
 <body>
 
-<div class="video-container">
 <iframe
-src="https://www.youtube.com/embed/iEpJwprxDdk?autoplay=1&mute=1&controls=0&rel=0&loop=1&playlist=iEpJwprxDdk"
-title="YouTube video player"
-allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen>
+  src="https://www.youtube.com/embed/iEpJwprxDdk?autoplay=1&mute=1&playsinline=1&loop=1&playlist=iEpJwprxDdk"
+  title="YouTube video player"
+  allow="autoplay; encrypted-media; picture-in-picture"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen>
 </iframe>
-</div>
 
 </body>
 </html>
-
